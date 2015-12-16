@@ -31,6 +31,8 @@
         <hr>
 
                   <section id="main_content">
+                                <h2>
+<a id="name" class="anchor" href="#name" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write Up</h2>
           <h3>
 <a id="name" class="anchor" href="#name" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name</h3>
 
@@ -39,25 +41,32 @@
 <h3>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h3>
 
-<p>I have chosen Option B: Cartoon Interpolation as my project. I will attempt to implement the continuous deformation of cartoons/animations using the polygon method, and attempt to extend this to potentially manipulate images that are not strictly SVG files. An example of what I hope to achieve can be found <a href="https://www.youtube.com/watch?v=cgs2Ew78Qfg">here</a>, which achieves some of its animated effects by warping and deforming a drawn image in a way presumably similar to what has been described. </p>
+<p> My original project choice was Option B. However, while attempting to implement it, I ran into many problems (caused mainly by my lack of experience in OpenGL and C++). After spending a day trying to parse the starter code, failing to properly integrate my planned changes to it (for example, the starter code appears to render all the characters each time it updates, which works for simple shapes but ends up effectively freezing my computer due to lag on textures), and having done little properly graphics-related coding, I pragmatically decided it would be a better idea to switch to Option I. For Option I, I basically wrote code to demosaic the Bayer mosaic, account for dead/flawed pixels and input, and autofocus the image, as described in the project description. </p>
+                      
+                      <h3>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instructions</h3>
+
+<p> The project should be compiled and run the way described on the project site, found <a href="http://graphics.cs.cmu.edu/courses/15869/fall2014/article/3">here</a>. I've also added an input option for a calibration file, so running the program would be: </p>
+                      
+<pre><code>./PROGRAMNAME -noiselevel 1 -verybadsensor -calibrate PATH_TO_SCENES/calibrate.bmp PATH_TO_SCENES/SCENE.bin OUTPUT.bmp
+</code></pre>
 
 <h3>
-<a id="concrete-steps" class="anchor" href="#concrete-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concrete Steps</h3>
+<a id="concrete-steps" class="anchor" href="#concrete-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some Results</h3>
 
-<ol>
-<li>Modify the project to be able to open/render non-SVG files along with an SVG file to sit on top of it and act as the frame/skeleton.</li>
-<li>Implement method to subdivide given polygon into triangles.</li>
-<li>Linearly interpolate these triangles in order to manipulate the image below.</li>
-<li>If time allows, implement methods for point and skeleton based manipulation, as mentioned here <a href="http://igl.ethz.ch/projects/bbw/">here</a>.<br>
-</li>
-<li>Record a video of the finished product in action.</li>
-</ol>
+                      <img src="images/black.bmp" style="width:600px;">
+                      <img src="images/gray.bmp" style="width:600px;">
+                      <img src="images/tartan.bmp" style="width:600px;">
+                      <img src="images/plant.bmp" style="width:600px;">
+                      <img src="images/output.bmp" style="width:600px;">
+                      
         </section>
           
           
           
         <section id="main_content">
-          <h3>
+                                <h2>
+<a id="name" class="anchor" href="#name" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposal</h2>
 <a id="name" class="anchor" href="#name" aria-hidden="true"><span class="octicon octicon-link"></span></a>Name</h3>
 
 <p>Sophia Zhu</p>
